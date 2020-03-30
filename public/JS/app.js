@@ -13,7 +13,7 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
 weatherForm.addEventListener('submit', (e) => {
-    e.preventDefault()
+    e.preventDefault() // prevents default window reload after submit
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
     const location = search.value
